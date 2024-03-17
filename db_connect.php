@@ -4,10 +4,10 @@ $username = "root";
 $password = "";
 $database = "woodcraft_store";
 
-// Create connection
+//create cnction using idp
 $connection = mysqli_connect($hostname, $username, $password, $database);
 
-// Check connection
+// chcking connecttionn
 if (!$connection) {
     die ("Connection failed: " . mysqli_connect_error());
 }
