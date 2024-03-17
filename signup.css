@@ -1,0 +1,79 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles to the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Apply styles to the container */
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Apply styles to the heading */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Apply styles to the form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Apply styles to the labels */
+label {
+    margin-bottom: 5px;
+}
+
+/* Apply styles to the inputs */
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Apply styles to the submit button */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Apply styles to the submit button on hover */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Apply styles to the paragraph */
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Apply styles to the link */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Apply styles to the link on hover */
+a:hover {
+    text-decoration: underline;
+}
