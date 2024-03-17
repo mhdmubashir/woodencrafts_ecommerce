@@ -9,52 +9,129 @@ body {
 }
 
 header {
-    background-color: #007bff;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+header h1 {
     color: #fff;
-    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-h1 {
-    margin-bottom: 10px;
-}
-
-nav ul {
+header nav ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
 }
 
-nav ul li {
+header nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
-nav ul li a {
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+header nav ul li a {
     color: #fff;
     text-decoration: none;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     text-decoration: underline;
 }
+
+
+
 
 .item-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 20px;
-}
-
-.item {
-    width: 30%;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
+    gap: 20px;
+    /* Adjust the gap between items */
 }
 
 .item img {
     width: 100%;
+    /* Ensures the image fills its container */
+    height: 200px;
+    /* Set a fixed height for all images */
+    object-fit: cover;
+    /* Ensures the image covers the entire container */
     border-radius: 5px;
 }
+
+
+.item {
+    width: calc(50% - 20px);
+    /* Adjust the width of each item */
+    max-width: 300px;
+    /* Set maximum width for larger screens */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    /* Ensure padding is included in the width */
+}
+
+/* For screens larger than 768px (tablets and desktops) */
+@media (min-width: 768px) {
+    .item {
+        width: calc(33.33% - 20px);
+        /* Adjust the width of each item */
+    }
+}
+
+/* For screens larger than 992px (desktops) */
+@media (min-width: 992px) {
+    .item-container {
+        gap: 10px;
+        /* Decrease gap between items */
+    }
+
+    .item {
+        max-width: 220px;
+        /* Decrease maximum width for larger screens */
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #0056b3;
+}
+
+
+@media screen and (max-width: 768px) {
+    .item {
+        width: calc(50% - 20px);
+        /* Adjust the width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .item {
+        width: calc(100% - 20px);
+        /* Adjust the width for even smaller screens */
+    }
+}
+
 
 footer {
     background-color: #f4f4f4;
