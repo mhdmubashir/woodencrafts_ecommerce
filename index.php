@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Woodcraft Items</title>
     <link rel="stylesheet" href="styles.css">
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery -->
+    <script src="script.js"></script> <!-- Include your custom JavaScript file -->
 </head>
 
 <body>
