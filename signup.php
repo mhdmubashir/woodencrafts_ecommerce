@@ -1,4 +1,5 @@
 <?php
+session_start();
 // Include database connection
 require_once "db_connect.php";
 
