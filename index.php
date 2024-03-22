@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Woodcraft Items</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery -->
-    <script src="script.js"></script> <!-- Include your custom JavaScript file -->
+
 </head>
 
 <body>
@@ -18,6 +17,7 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="sell_item.php">Sell Item</a></li>
                 <li><a href="orders.php">Orders</a></li>
+                <li><a href="my_products.php">MyProduct</a></li>
                 <li><a href="about.php">About</a></li>
                 <li><a href="about.php">Cart</a></li>
                 <?php if (isset ($_SESSION['email'])): ?>
@@ -31,6 +31,7 @@
 
     <section class="item-container">
         <?php
+        session_start();
         // Include the database connection file
         include_once 'db_connect.php';
 
